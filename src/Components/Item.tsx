@@ -1,4 +1,11 @@
-const Item = ({ item, handleToggle }) => {
+interface ItemProp {
+  item: number | string;
+  handleToggle: () => {};
+}
+
+const Item = ({ item, handleToggle }: ItemProp) => {
+  console.log(item, handleToggle);
+
   return (
     <label>
       <input

@@ -45,7 +45,7 @@ button {
 }
 
 .dropzone {
-  height: 300px;
-  width: 200px;
+  min-height: 350px;
+  min-width: 250px;
   border: 2px solid palevioletred;
 }
