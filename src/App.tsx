@@ -43,11 +43,7 @@ function App() {
   return (
     <main className="flex items-center gap-10">
       <DropZone items={leftItems} handleToggle={handleToggle} />
-      <Actions
-        checkedItems={checkedItems}
-        moveLeft={moveLeft}
-        moveRight={moveRight}
-      />
+      <Actions moveLeft={moveLeft} moveRight={moveRight} />
       <DropZone items={rightItems} handleToggle={handleToggle} />
     </main>
   );
