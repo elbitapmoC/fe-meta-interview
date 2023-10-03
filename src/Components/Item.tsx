@@ -1,16 +1,13 @@
-interface ItemProp {
-  item: number | string;
-  handleToggle: () => {};
+interface ItemProps {
+  item: number; // Assuming item is a number, adjust the type if needed
+  handleToggle: (item: number) => void; // Assuming handleToggle takes a number as an argument
 }
 
-const Item = ({ item, handleToggle }: ItemProp) => {
-  console.log(item, handleToggle);
-
+const Item = ({ item, handleToggle }: ItemProps) => {
   return (
     <label>
       <input
         type="checkbox"
-        id={item}
         onChange={() => {
           handleToggle(item);
         }}

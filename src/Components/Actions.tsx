@@ -1,4 +1,10 @@
-const Actions = ({ moveLeft, moveRight }) => {
+// Define a type for the moveRight and moveLeft functions
+interface MoveProp {
+  moveLeft: () => void;
+  moveRight: () => void;
+}
+
+const Actions = ({ moveLeft, moveRight }: MoveProp) => {
   return (
     <aside className="actions flex flex-col gap-5">
       <button className="hover:bg-orange-950 shadow-md" onClick={moveLeft}>
